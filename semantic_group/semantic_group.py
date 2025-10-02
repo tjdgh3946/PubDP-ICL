@@ -11,10 +11,14 @@ import numpy as np
 import argparse
 import asyncio
 import aiohttp
+from DPM import DPM
+
 
 # from openai import OpenAI
 
-os.environ["OPENAI_API_KEY"] = ""
+os.environ[
+    "OPENAI_API_KEY"
+] = "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"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 # CLIENT = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", False))
 
@@ -89,7 +93,14 @@ def predict(prompt, temperature=1.0, model="gpt-4"):
     return response
 
 
-async def get_embedding(text, placeholder, model=None):
+import os
+import aiohttp
+import asyncio
+
+default_retry_delay = 2  # 재시도 간격 (초)
+
+
+async def get_embedding(text, model=None, retry_delay=default_retry_delay):
     openai_api_key = os.environ.get("OPENAI_API_KEY")
 
     headers = {
@@ -101,21 +112,26 @@ async def get_embedding(text, placeholder, model=None):
 
     url = "https://api.openai.com/v1/embeddings"
 
-    async with aiohttp.ClientSession() as session:
-        try:
-            async with session.post(url, headers=headers, json=data) as response:
-                if response.status == 200:
-                    result = await response.json()
-                    embedding = result["data"][0]["embedding"]
-                    return embedding
-                else:
-                    print(f"Error {response.status}: {await response.text()}")
-                    print(f"Cannot embed {text}, returning placeholder")
-                    return placeholder
-        except Exception as e:
-            print(f"Exception occurred: {e}")
-            print(f"Cannot embed {text}, returning placeholder")
-            return placeholder
+    while True:
+        async with aiohttp.ClientSession() as session:
+            try:
+                async with session.post(url, headers=headers, json=data) as response:
+                    if response.status == 200:
+                        result = await response.json()
+                        embedding = result["data"][0]["embedding"]
+                        return embedding
+                    else:
+                        print(f"Error {response.status}: {await response.text()}")
+                        print(f"Retrying in {retry_delay} seconds...")
+                        await asyncio.sleep(retry_delay)
+            except Exception as e:
+                print(f"Exception occurred: {e}")
+                print(f"Retrying in {retry_delay} seconds...")
+                await asyncio.sleep(retry_delay)
+
+
+# 사용 예제
+# asyncio.run(get_embedding("example text", model="text-embedding-ada-002"))
 
 
 def get_semantic_ids(strings_list, model, strict_entailment=False, question=None):
@@ -178,6 +194,7 @@ async def construct_semantic_groups(
     List of lists: Each sublist contains indices of sentences that belong to the same group.
     """
     # Step 1: Compute cosine similarity matrix
+
     try:
         placeholder = (
             openai.Embedding.create(input=[strings_list[0][0]], model=model)
@@ -191,11 +208,16 @@ async def construct_semantic_groups(
             .embedding
         )
 
-    embeddings = [
-        await get_embedding(text[0], placeholder, model=model) for text in strings_list
-    ]
+    embeddings = []
+    public_indices = []
+    for i, text in enumerate(strings_list):
+        embedding = await get_embedding(text[0], placeholder, model=model)
+        embeddings.append(embedding)
+        if "public" in text[1]:
+            public_indices.append(i)
+
     if path:
-        with open(npy_path, "wb") as f:
+        with open(path, "wb") as f:
             np.save(f, np.array(embeddings))
 
     # embeddings = [emb for emb in embeddings if emb is not None]  # filter missing value
@@ -225,9 +247,9 @@ async def construct_semantic_groups(
                     continue
                 else:
                     if similarity_matrix[i][j] >= similarity_threshold:
-                        groups[j] = (
-                            current_group_id  # Assign the same group if similarity is above the threshold
-                        )
+                        groups[
+                            j
+                        ] = current_group_id  # Assign the same group if similarity is above the threshold
                         cluster[current_group_id].append(j)
                         cge = cluster_embeddings[current_group_id]
                         new_embed = np.expand_dims(embeddings[j], axis=0)
@@ -238,6 +260,19 @@ async def construct_semantic_groups(
         else:
             continue
 
+    public_cluster = {}
+    public_embeddings = {}
+
+    for key, value in cluster.items():
+        # Filter values based on public_indices
+        filtered_values = [v for v in value if v in public_indices]
+        public_cluster[key] = (
+            filtered_values if filtered_values else value
+        )  # Fallback to original value if filtered list is empty
+
+        # Generate public_embeddings for the key
+        public_embeddings[key] = [embeddings[v] for v in public_cluster[key]]
+
     # Record the histogram count
     count = [len(value) for value in cluster.values()]
     # Find Representatives
@@ -245,9 +280,9 @@ async def construct_semantic_groups(
         if len(cluster[k]) > 1:
             centroid = np.mean(cluster_embeddings[k], axis=0)
             distances_to_centroid = np.linalg.norm(
-                cluster_embeddings[k] - centroid, axis=1
+                public_embeddings[k] - centroid, axis=1
             )
-            closest_idx = cluster[k][np.argmin(distances_to_centroid)]
+            closest_idx = public_cluster[k][np.argmin(distances_to_centroid)]
         else:
             closest_idx = cluster[k][0]
         cluster[k] = closest_idx
@@ -277,6 +312,32 @@ async def construct_semantic_groups(
             semantic_group[k].append({"Representative": [strings_list[cluster[k]]]})
 
         return semantic_group, count
+
+
+async def private_semantic_clustering(strings_list, model, path=None):
+    """[summary]
+
+    Arguments:
+        strings_list: List of (string, attribute) where the attributee is private or public
+        model: OPENAI MODEL ID
+
+    Keyword Arguments:
+        path: embedding output export path
+
+    Returns:
+        centroids
+        clusters
+    """
+    # Step 1: Compute embedding of strings
+    embeddings = []
+    for i, text in enumerate(strings_list):
+        embedding = await get_embedding(text[0], model=model)
+        embeddings.append(embedding)
+
+    print(f"Exported to path {path}")
+    if path:
+        with open(path, "wb") as f:
+            np.save(f, np.array(embeddings))
 
 
 def load_ensemble_ouptut(path, query_extract=False):
@@ -367,10 +428,12 @@ def main():
     ensembles = {}
     for i in range(len(private_ensembles)):
         if args.aggregate:
-            ensembles[i] = private_ensembles[i] + public_ensembles[i]
+            # ensembles[i] = private_ensembles[i] + public_ensembles[i]
+            ensembles[i] = public_ensembles[i]
         else:
             ensembles[i] = private_ensembles[i]
 
+    print(f"Number of ensemble: {len(ensembles[0])}")
     start = time.time()
     export_output = []
     if args.aggregate:
@@ -381,7 +444,7 @@ def main():
         path = f"semantic_group/oodpublic_{args.similarity_threshold}_{filename}"
     else:
         path = f"semantic_group/{args.gamma}_{args.similarity_threshold}_{filename}"
-    print(f"\nExport path: {path}\n")
+    # print(f"\nExport path: {path}\n")
 
     if args.export_embedding:
         npy_subpath = filename.split(".")[0]
@@ -394,10 +457,18 @@ def main():
         num_examples = len(ensembles)
     else:
         num_examples = 1
-
     only_centroid = not args.debug
+
+    if args.ood:
+        npy_subpath = f"semantic_group/ood_{npy_subpath}_aug"
+    else:
+        npy_subpath = f"semantic_group/{npy_subpath}"
+
+    if not os.path.exists(npy_subpath):
+        os.makedirs(npy_subpath)
+    print(f"\nExport path: {npy_subpath}\n")
     for i in tqdm(range(num_examples)):
-        # npy_path = f"semantic_group/{npy_subpath}/{i}.npy"
+        """
         semantic_group, count = asyncio.run(
             construct_semantic_groups(
                 ensembles[i],
@@ -407,14 +478,26 @@ def main():
                 path=npy_subpath,
             )
         )
+        """
+        npy_path = os.path.join(npy_subpath, f"{i}.npy")
+        asyncio.run(
+            private_semantic_clustering(
+                ensembles[i], args.embedding_model, path=npy_path
+            )
+        )
+        """
         semantic_group["count"] = count
         semantic_group["query"] = queries[i]
         semantic_group["reference"] = references[i]
         export_output.append(semantic_group)
+        """
+
+    """
     end = time.time()
     print(f"Elapsed time: {convert_to_mm_ss(end-start)}\n\n")
     with open(path, "w") as f:
         json.dump(export_output, f, indent=4)
+    """
 
 
 parser = argparse.ArgumentParser()

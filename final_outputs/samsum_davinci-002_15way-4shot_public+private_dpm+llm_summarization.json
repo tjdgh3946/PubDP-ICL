@@ -1,0 +1,202 @@
+[
+  {
+    "Qidx": 0,
+    "prediction": "Jay and Joe are going to Kenya to see a diamond concert. Jay has convinced Ruth and Paulette to go with them. Joe is going to pay Jay back for the tickets.",
+    "reference": "Jay will lend Joe money for the ticket for the event. Ruth and Paulette will accompany them.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  },
+  {
+    "Qidx": 1,
+    "prediction": "Helen called Simon before, but he was on the phone. She asked him to fetch her some tissues because the toilet paper is finished.",
+    "reference": "Simon was on the phone before so he didn't hear Helen calling. Simon will fetch Helen some tissues as they're out of toilet paper.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 29
+  },
+  {
+    "Qidx": 2,
+    "prediction": "Maya wants Boris to bring home the clothes that are hanging outside. Boris is not home right now, so he tells Brian to take care of that.",
+    "reference": "Maya wants Boris to bring clothes that are hanging outside. Brian will do that, because Boris isn't at home now.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 23
+  },
+  {
+    "Qidx": 3,
+    "prediction": "Grace and Audrey didn't get to talk much at the party last night. Grace is excited about graduating soon. She is not sure if she will apply for grad school or take a year off.",
+    "reference": "Grace and Audrey didn't manage to talk at yesterday's party. Grace is about to graduate. She doesn't know if she will apply for a grad school or take a gap year.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 29
+  },
+  {
+    "Qidx": 4,
+    "prediction": "Brook tells Gyle that something happened yesterday and he needs to come home.",
+    "reference": "Brook wants Gyle to come and see what happened yesterday. ",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 18
+  },
+  {
+    "Qidx": 5,
+    "prediction": "Julia and Gail are talking about social media. Julia likes her Instagram, Snapchat, Twitter and Facebook. Gail likes to spy on people. Julia thinks Hillary is a bitch.",
+    "reference": "Jessica posts a lot regarding subjects she does nothing about in reality. Julia posts in a more genuine way. But Hillary thinks she does it to death and lacks real life.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 28
+  },
+  {
+    "Qidx": 6,
+    "prediction": "Michael can't make it to the meeting today. He's sorry and will call Tom tomorrow.",
+    "reference": "Michael can't leave the office before 8 PM, so he's unable to meet with Tom. Michael will call Tom tomorrow.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 27
+  },
+  {
+    "Qidx": 7,
+    "prediction": "Christine has a cold. Annie will drop some Theraflu through her letterbox.",
+    "reference": "Christine is sick and won't come to school tomorrow. Annie will leave Theraflu sachets in a mailbox. Christine doesn't want to get her sick.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 25
+  },
+  {
+    "Qidx": 8,
+    "prediction": "30 minutes of activity every day is a challenge for Rob. Greg is already doing 60 minutes a day. Will says that it's better to be realistic. Anna is in and needs support from the others.",
+    "reference": "Rob wants to start doing 30 minutes of physical activity every day. Greg is already doing 60 minutes. Anna wants to start exercising just like Rob. ",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  },
+  {
+    "Qidx": 9,
+    "prediction": "Mell and Gloria are talking about their kids. Mell's kids have moved out and she is enjoying the peace and quiet. Gloria is happy to hear from Mell again. They are planning a BBQ.",
+    "reference": "Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  },
+  {
+    "Qidx": 10,
+    "prediction": "Olivia and Jake are talking about their plans for the day. Olivia needs to do her accounts and upload some videos to YouTube. Jake does some post-production but he doesn't always have time to do much.",
+    "reference": "Olivia has to sort out her accounts and upload a few videos on YouTube. Jake is complaining that Sony Music tried to appropriate his own music.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 29
+  },
+  {
+    "Qidx": 11,
+    "prediction": "Marta is looking for a technician to fix her PC. Joel doesn't know anyone but Pablo, the best technician in the office, is on vacation this week. Marta will ask Cynthia and Elena if they know someone.",
+    "reference": "Marta needs help with the PC. On Joel's advice, she will contact Cynthia or Elena as they might know someone. ",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 29
+  },
+  {
+    "Qidx": 12,
+    "prediction": "Adele got a new dog, a labrador puppy called Bones. The cats keep their distance, Poppy and Lulu seem to mother him. Speedy wants to play. Lola can't wait to see him.",
+    "reference": "Adele got a new biscuit Labrador Chewy that is 4 months. Her cats keep their distance, and Poppy and Lulu seem to mother Chewy and Speedy wants to play.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  },
+  {
+    "Qidx": 13,
+    "prediction": "Priscilla needed Microsoft Office software for her new laptop. Stuart gave her a disc with Open Office and other programs on it. Priscilla bought the software online.",
+    "reference": "Priscilla is upset with Stu because his friend, Alex, didn't provide her with the right software. She had to buy it online instead.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 27
+  },
+  {
+    "Qidx": 14,
+    "prediction": "Eric sends a video to Samantha and Noah. It's a video of their professor talking about a recent scandal on the news.",
+    "reference": "Eric, Samantha and Noah's professor is commenting a recent scandal on the news. ",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 28
+  },
+  {
+    "Qidx": 15,
+    "prediction": "Jason and Dory are making a video. Dory's friend is coming over the day after tomorrow. Jason purchased an app to video and edit. Lucy has a script. They just have to produce something now.",
+    "reference": "Jason wants to meet Dory over the weekend. Dory's friend is going to stay with her for a week. Jason has been working on a movie with Lucy for the past two months. Jason bought a video-creator app.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  },
+  {
+    "Qidx": 16,
+    "prediction": "Peter has been busy with work. He has been working out to improve his health. Lisa is also thinking of working out. Peter goes to the gym near his office. He does weights and runs on the treadmill. Lisa thinks she needs to eat better to help her keep in shape. Peter says sleep is also important for good health.",
+    "reference": "Peter has been working out at the gym near their office lately to improve his health. Lisa is considering working out and eating better to be healthier.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 28
+  },
+  {
+    "Qidx": 17,
+    "prediction": "Harry wants Cindy to call Ela and tell her that he needs to talk to her urgently. Cindy is fed up with Harry's behaviour and says that she will do it but it's the last time. Harry thanks her and says that he loves her.",
+    "reference": "Ela is not taking Harry's phone calls. Cindy calls Ela at Harry's request.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 29
+  },
+  {
+    "Qidx": 18,
+    "prediction": "Alex and Zayna are going to have a drink together. They will meet at 8 pm at Zayna's place.",
+    "reference": "Alex is coming for a drink tonight at 8 to Zayna's place.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 19
+  },
+  {
+    "Qidx": 19,
+    "prediction": "Lenny asks Bob which trousers he should buy. Bob says that he likes the first ones best. Lenny asks if he should buy the same color as he already has. Bob says that it doesn't matter and that he should buy the best quality.",
+    "reference": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.",
+    "method": "dpm+llm",
+    "split": "public+private",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 30
+  }
+]

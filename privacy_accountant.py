@@ -184,14 +184,14 @@ if __name__ == "__main__":
 
     # Extract target_param from arguments
     target_param = args.tp
-    delta = 1 / 3900
-    prob = 400 / 3900
+    delta = 1 / 1024
+    prob = 10 / 1024
 
     privacy_params = {
         "eps": 0.237,
         "sigma": 1,
         "prob": prob,
-        "niter": 100,
+        "niter": 1024,
         "monotone": False,
     }
 

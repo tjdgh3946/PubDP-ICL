@@ -1,0 +1,182 @@
+[
+  {
+    "Qidx": 0,
+    "prediction": "urgent",
+    "reference": "Hello, Welcome to Chat Doctor forum. I went through your post. Your predominant complaints are palpitations and lower abdomen pain. Any person who notices a change in their heartbeats should go for ECG (electrocardiogram) to rule out arrhythmia. The most common causes of a one-sided pain in the lower abdomen are kidney stone or urinary tract infection. These are only the most common causes. However, there are more than 10 causes of the same. A USG (ultrasonogram) of the abdomen with a urine examination will help you come to a conclusion. Consult a physician with above investigations so he can help you. Regards. For more information consult an internal medicine physician online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 1,
+    "prediction": "drop",
+    "reference": "Hello, Welcome to Chat Doctor forum. Thanks for your query. You take Reaptan (Perindopril Arginine and Amlodipine). It is completely contraindicated to take both Perindopril and Candesartan at the same time. I strongly recommend that you stop Candesartan. Tamsulosin is good for both your prostate and blood pressure. Also, it is advisable to take Reaptan in the morning and Tamsulosin in the evening. For more information consult a general medicine physician online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 2,
+    "prediction": "antibiotics",
+    "reference": "Hi. Bad breath or halitosis is a problem where the breath is smelly. It has some causes from food to some disorders. As you have tonsil stones, you can have infections in it. It can be treated by using antibiotics. If you have a recurrent infection in the tonsil, then I suggest you visit an ENT specialist. If you are not allergic to antibiotics, you can take Azithromycin tablet once a day for three days. If the infection persists, continue taking it for six days. Take Montral (Montelukast with Levocetirizine) tablet daily after dinner for seven days. Do mouth gargles using Chlorhexidine mouthwash (1",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 3,
+    "prediction": "weak",
+    "reference": "Hello, Welcome to Chat Doctor forum. From what you mentioned, you have experienced upper respiratory infection and you received appropriate therapy of antibiotics. Post-nasal  ChatDoctor.  Regarding pneumonia, you should not worry about it as you have no symptoms like high fever, rapid breathing or wet cough with dark phlegm, also your chest X-ray is free as you mentioned. Your weakness is most likely myalgia which accompanies the infection. It will improve within days. Have you performed CBC blood tests? I suggest",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 4,
+    "prediction": "lack",
+    "reference": "Hello. Yes, this pandemic is causing a lot of stress in everybody is mind. We all processing information at the conscious subconscious and unconscious level of our brain. Sometimes that is to this kind of disturbance in biological rhythms. Along with that at times people start having anxiety of not falling asleep. So do not worry just follow some sleep hygiene measures. Try some sleep hygiene measures. 1) Wake up at the same time every day. 2) If after lying down you are not able to sleep for 10 to 15 minutes then get up from bedsit on a table chair and start reading something. 3) Do not take any tea or coffee after 6 PM. 4) Listen to some white noise or light music. Start some exercise on a routine basis that will keep you fit and will release some and will release endorphins in your brain that will relax your mind. Start Pranayama and meditation.  Take care.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 5,
+    "prediction": "IgA",
+    "reference": "Hi, Welcome to Chat Doctor forum. There is a rise in creatinine, but that needs to be vigilant to check if we are missing any reason for the rise. We do not have any medicine to reduce creatinine levels. We need to keep the disease activity under control. Your blood pressure should be 120/80 mmHg. You should not be taking any painkillers. So, you should get your serum creatinine repeated on a monthly basis. For more information consult a nephrologist online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 6,
+    "prediction": "circadian",
+    "reference": "Hi. Many things can cause morning fatigue. If you snore at night, you may have a condition called sleep apnea or otherwise known as obstructive sleep apnea. This causes a lack of oxygen and can cause people to feel  ChatDoctor.  However, this would not explain why you have more energy in the evening. The other things that can cause fatigue in the morning include depression and sadness. The type of sadness that gets more energy in the evening is called bipolar depression. Also, it is important to check thyroid when it comes to fatigue.  Take care.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 7,
+    "prediction": "Orthodontic",
+    "reference": "Hello, Welcome to Chat Doctor forum. If there is still crowding after wisdom teeth extraction you need to get braces by an orthodontist. I need to see a picture of your inside mouth to suggest a treatment plan. Sometimes, the orthodontist may suggest extraction of premolar teeth just behind the canines for creating more space. It all depends on how your teeth are arranged, size of teeth and spaces between teeth. Send some pictures for more details. For more information consult a dentist online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 8,
+    "prediction": "cycle",
+    "reference": "Hello, Welcome to Chat Doctor forum. I have gone through your history and understand your concerns. As you had an I-pill, the chances of pregnancy are not there in your case. The delayed periods could be due to hormonal imbalance caused by I-pill. You can just wait and watch for your menses for three more days and repeat your home urine pregnancy test to rule out pregnancy. Hope you found it useful, feel free to ask more information. For more information consult an obstetrician and gynaecologist online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 9,
+    "prediction": "The duration of the therapy may vary depending on the severity of the rheumatoid arthritis and how well you respond to the treatments. It is important to closely follow-up with your doctor or healthcare provider, who can monitor your progress and make any necessary adjustments to your medications or therapy. Incorporating herbal supplements like Trikata, Sinhanad guggul, and Shalaki, as well as natural remedies like ginger tea and sesame oil massage, can be beneficial in managing the symptoms of rheumatoid arthritis. It is essential to consult with your healthcare provider for recommendations on how to best manage your condition.",
+    "reference": "Hello. I just read your query. The medications you are taking are all good, but rheumatoid arthritis is an autoimmune disease. So, you have to take medicine for a long term. The effect of rheumatoid arthritis varies from patient to patient. In some people, after taking proper medicine, further damage to joints can be prevented. However, in some, it persists even after taking medicine. So, I advise you to follow your doctor\\\\s advise and keep on repeating your investigations after some time. Also, do ask your physician about Panchakarma therapy. It is also very helpful in rheumatoid arthritis. I hope you are satisfied with my answer. For more information consult an ayurveda specialist online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 10,
+    "prediction": "dose",
+    "reference": "Hello, Welcome to Chat Doctor forum. Fluoxetine 20 mg OD is the usual dose prescribed in managing depression and anxiety. Sometimes Fluoxetine dose needs to be increased to 40 mg OD if the previous dose is no longer effective. You have been on 40 mg for the past four days. You may be aware that you need to wait for at least 2 to 4 weeks to see the maximum therapeutic response. In addition to medication, you will benefit from counseling, CBT to manage your emotional difficulties. Discuss with your GP, CMHT in case you have not had taking therapy before. Try to exercise daily. Even brisk walking outdoors for 30 minutes daily can help to improve your mood and lower anxiety. In case, if you do not get better even on Fluoxetine 40 mg OD. Kindly consult with your doctor. You may need a reassessment of your symptoms and sometimes alternative SSRI needs to be considered.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 11,
+    "prediction": "Hyperthyroidism",
+    "reference": "Hi. You are likely to be having thyroid cyst with hyperthyroidism and GERD (gastroesophageal reflux disease). As far as thyroid problems are concerned, they are managed by medical treatment followed by surgery. Your other problem of thick mucous and hyperacidity can be managed by a change in lifestyle, dietary habits, and medication. You have to consult your doctor for a thorough examination and necessary investigations to manage it properly. For more information consult an internal medicine physician online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 12,
+    "prediction": "autoimmune-related",
+    "reference": "Hello, Welcome to Chat Doctor forum. I have gone through your history and investigations (attachment removed to protect patient identity). Well firstly iridocyclitis (anterior uveitis) is mostly an autoimmune problem. We can only find a definite cause in 30 percent cases. So, when it is a single episode we tend to ignore it but when you have recurrent episodes (more than twice a year) we need to treat it. So, even if all are negative and you are getting recurrent episodes it needs to be treated. HLAB 27 method done is an outdated one. You can request them to do by PCR method as it holds importance in your diagnosis. You can discuss with your ophthalmologist. As the treatment needs to be accelerated, we need to start you on DMARDS as for iridocyclitis only few  ChatDoctor.  My preference would be Methotrexate but we will need to discuss with your ophthamologist once.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 13,
+    "prediction": "Folliculitis",
+    "reference": "Hello. I have seen the pictures. (attachment removed to protect patient identity).  I have gone through your query and understood your concerns. In my opinion, the picture you have sent may be either warts or molluscum. As both mentioned diseases are contagious you must be careful from now onwards. If you have a weak immune system then it will take time to go away. I would like to suggest you go to a dermatologist once so that they can scrap the area and see that in a microscope. For now, I will prescribe one ointment that is Imiquimod cream. Use this cream three days a week (Monday, Wednesday, and Friday). To use the cream, follow these steps",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 14,
+    "prediction": "antifungal",
+    "reference": "Hi, Welcome to Chat Doctor forum. I have read your concern and examine your pictures (attachment removed to protect patient identity). Ingrowing nail. 1. Gram staining and culture.2. Potassium hy ChatDoctor.  1. Acute paronychia without obvious abscess can be treated nonsurgically like in your case.2. I suggest tablet Augmentin 625 mg thrice daily (combination of Amoxicillin and Clavulanic acid) for 5 days and 1% Clotrimazole plus Fusidic acid cream twice daily for one week.Consult your specialist doctor, discuss with him or her and take the medicine with consent. Cut the nail from the side as it grows from the side and cause recurrent problem. Also, do not use tight foot wear. Revert back after a week to a dermatologist online.-",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 15,
+    "prediction": "consult",
+    "reference": "Hello. I understand your concern. You are on the standard medications that we prescribe for treatment of diabetes. But if your blood sugar levels are in the range of 250 to 350 with the use of medicines, then it is on the higher side and you will need a modification of medicine dosage or addition of another new  ChatDoctor.  A small dose of insulin may help you a lot in reducing your blood sugar levels. I suggest that you talk to your diabetologist regarding the options available that suits your needs.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 16,
+    "prediction": "Hair loss, causes, thyroid, symptoms, evaluation, consult, management, disorders, stress, prompt, necessary, investigate, identified, condition, overall, proper, treatment, options, visiting, forum, Chat.",
+    "reference": "Keyword - Unexplained weight loss Hi, Welcome to Chat Doctor forum. You are having a weight loss of five kilograms in one year. It can be due to anxiety, over-exercise, and due to less food intake than a requirement. You can rule out such common cause if it is present. If this is not the issue, then investigate with serum TSH (thyroid stimulating hormone) estimation to rule out hyperthyroid. You can do test for HIV using Elisa, and fourth generation testing if it is suspected. You can do a chest X-ray to rule out any lung problem if it is present. Any chronic infection can also lead to weight loss. So provide your history if it is present. You can consult a physician for a physical examination.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 17,
+    "prediction": "persistent",
+    "reference": "Hi. I understand your anxiety. The fortune thing is that even if last year HPV was present the treatment has been done in the form of hysterectomy. In fact it is over treated. I do not think it is a matter of concern.  For your vaginal HPV, low risk types are rarely responsible for any cancer. Also If one is sexually active, HPV infection keeps coming and body deals with it by its own immunity. What should concern us is a persistent HPV infection in your vaginal smears. So right now just use barrier contraception like condoms and repeat vaginal smear at 6 months. That is all. Follow up is what is needed as you are a very low risk case.  Take care.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 18,
+    "prediction": "rest, over-the-counter, consult, strain, gentle, recover, activities, gradually, affected, basketball, applying, managing, proper, try, discomfort, time, strains, also, remedies, properly, worsens, ice, give, professional, ibuprofen, may, stretch, fibula, sessions, following, suggestions, description, icing, warm, overuse, provided, advisable, help, treating, taking, make, addition, area, playing, using, would, elevating, due, healthcare",
+    "reference": "Hello. As this pain looks to be more of muscle fatigue. As the fatigue is going to set in because of a less muscular part in the leg region. Mostly the anterior portion of the leg pains which is the fascia pain. You can use icing to reduce the pain. For having a good sports fitness you need to do some small warm-up and stretching exercises before the game. Also doing regular jogging for 20 minutes should give a good outcome score. Most sports injury happens due to lack of fitness levels and performing warm-up and stretching before sports can help avoid pains and Injuries.",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  },
+  {
+    "Qidx": 19,
+    "prediction": "Surgical intervention for cryptorchidism usually involves moving the undescended testicle from the abdomen to the scrotum. In some cases, removal of the testicle may be necessary, but this depends on individual factors. It is important to consult with a healthcare provider to determine the best course of treatment. Having a single testicle may affect fertility, but it is still possible to father children.",
+    "reference": "Hello, Welcome to Chat Doctor forum. I want to know the size of the testis. Also, what is the status of opposite testis? Normal and descended completely with normal size? As you are 25 and if your undescended testis is small and atrophy then better remove it. There will be no effect if you remove one testis if the other testis is normal. You can be a father and live normal life. Practically you are on one testis only. For more information consult a urologist online",
+    "method": "ksa-select",
+    "split": "public",
+    "task": "qa",
+    "ood": false
+  }
+]

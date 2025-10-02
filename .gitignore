@@ -1,0 +1,10 @@
+/__pycache__
+/openicl
+/backup
+/data
+
+
+semantic_group/*/
+/output
+
+*.ipynb

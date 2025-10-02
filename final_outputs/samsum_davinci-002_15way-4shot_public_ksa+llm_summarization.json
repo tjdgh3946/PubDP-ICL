@@ -1,0 +1,202 @@
+[
+  {
+    "Qidx": 0,
+    "prediction": "Jay heard that a diamond is in Kenya and wants to attend the upcoming concert. He is excited and convinced his friends Ruth and Paulette to accompany him. Joe is worried about the cost of tickets but Jay is happy to lend him money. They are planning to go together and Jay is also happy that Joe will start making connections for them in the future.",
+    "reference": "Jay will lend Joe money for the ticket for the event. Ruth and Paulette will accompany them.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 1,
+    "prediction": "Helen called Simon for help because the toilet paper finished. Simon is happy to fetch tissues for her, even though Helen is a bit embarrassed.",
+    "reference": "Simon was on the phone before so he didn't hear Helen calling. Simon will fetch Helen some tissues as they're out of toilet paper.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 24
+  },
+  {
+    "Qidx": 2,
+    "prediction": "Maya asks Boris to bring home the clothes hanging outside as it looks like it's going to rain. Boris tells Maya he's not home and will ask Brian to take care of it.",
+    "reference": "Maya wants Boris to bring clothes that are hanging outside. Brian will do that, because Boris isn't at home now.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 31
+  },
+  {
+    "Qidx": 3,
+    "prediction": "Grace and Audrey met at a party and wanted to catch up. Grace is excited about graduating soon and is considering applying for grad school or taking a year off. Audrey thinks taking a year off is a good idea and wants Grace to let her know when she makes up her mind. Audrey knows Grace has always liked school and is still thinking about her future plans.",
+    "reference": "Grace and Audrey didn't manage to talk at yesterday's party. Grace is about to graduate. She doesn't know if she will apply for a grad school or take a gap year.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 4,
+    "prediction": "Gyle: Brook told me something happened yesterday, I need to come home.",
+    "reference": "Brook wants Gyle to come and see what happened yesterday. ",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 25
+  },
+  {
+    "Qidx": 5,
+    "prediction": "The dialogue revolves around social media usage, spying on people's posts, and the perception of authenticity. Gail and Julia discuss their social media habits, with Gail admitting to enjoying spying on others. They talk about Jessica's potential dieting plans and how she tends to overdo her posts without taking real action. Gail mentions that Hillary thinks Julia overdoes her social media posts and lacks a real-life presence. Julia reacts negatively to this, calling Hillary a bitch.",
+    "reference": "Jessica posts a lot regarding subjects she does nothing about in reality. Julia posts in a more genuine way. But Hillary thinks she does it to death and lacks real life.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 6,
+    "prediction": "Michael apologizes for not being able to make it to the party today because he can't leave the office before 8 PM. Tom says it's okay and asks Michael to call him tomorrow.",
+    "reference": "Michael can't leave the office before 8 PM, so he's unable to meet with Tom. Michael will call Tom tomorrow.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 26
+  },
+  {
+    "Qidx": 7,
+    "prediction": "Christine is not feeling well and will not be at school tomorrow. She thinks she has the flu but is not running a fever. Annie offers to drop some Theraflu sachets through Christine's letterbox later on. Christine is worried about Annie catching her cold but Annie reassures her. If the light in Christine's room is on, Annie can call.",
+    "reference": "Christine is sick and won't come to school tomorrow. Annie will leave Theraflu sachets in a mailbox. Christine doesn't want to get her sick.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 8,
+    "prediction": "Greg suggests starting the Get off the couch challenge with friends. Rob wants to start with 30 min of activity every day, while Greg is already ahead with at least 60 min a day. Anna thinks 30 min is realistic and needs lots of support. Will wishes good luck and suggests looking for a variety of exercises.",
+    "reference": "Rob wants to start doing 30 minutes of physical activity every day. Greg is already doing 60 minutes. Anna wants to start exercising just like Rob. ",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 9,
+    "prediction": "Mell and Gloria are planning a BBQ in Mell's garden. They are enjoying the peace and quiet now that their children have moved out. Mell feels guilty about not missing her kids more, but Gloria reassures her. They are looking forward to a fantastic barbecue without Tad's sister-in-law. Gloria will bring dessert, Mell will do the food, and they will enjoy the weekend together. They are thinking about extending the terrace and discussing garden design ideas. Overall, they are still enjoying the quiet life and planning a fun BBQ.",
+    "reference": "Gloria and Mell plan to have a barbeque at Mell's place on Saturday. They are happy, because Tad's sister moved to Scotland. Mell needs Gloria's advice on garden design.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 10,
+    "prediction": "Olivia is talking to Jake about her plans for the day. She needs to sort out her accounts and upload some videos to YouTube. They discuss issues with copyright strikes on music. Jake advises Olivia on how to handle the situation with copyright claims from companies like Sony Music.",
+    "reference": "Olivia has to sort out her accounts and upload a few videos on YouTube. Jake is complaining that Sony Music tried to appropriate his own music.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 11,
+    "prediction": "Joel suggests Marta ask Cynthia or Elena for a good technician to fix her PC while Pablo, the best one on the team, is on vacation this week.",
+    "reference": "Marta needs help with the PC. On Joel's advice, she will contact Cynthia or Elena as they might know someone. ",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 35
+  },
+  {
+    "Qidx": 12,
+    "prediction": "Adele got a new 4-month-old labrador puppy named Bones. Her other pets seem to be fine with him, with the cats keeping their distance and the other dogs like Poppy and Lulu mothering him. Speedy wants to play with the new puppy. Adele thinks that puppies are accepted more easily by other animals, especially girl dogs. Lola can't wait to see the new addition to the family. They talk about how girl dogs like to fight and how puppies are easier to integrate into a household compared to adult dogs. They both agree that doggies can be quite funny.",
+    "reference": "Adele got a new biscuit Labrador Chewy that is 4 months. Her cats keep their distance, and Poppy and Lulu seem to mother Chewy and Speedy wants to play.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 13,
+    "prediction": "Priscilla realized Stuart gave her the wrong software for her new laptop. She needed Microsoft Office, but his friend Alex downloaded Open Office and other programs on a CD. Priscilla is angry and bought the software online instead. Stuart is in trouble and regrets not checking before giving it to her.",
+    "reference": "Priscilla is upset with Stu because his friend, Alex, didn't provide her with the right software. She had to buy it online instead.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 38
+  },
+  {
+    "Qidx": 14,
+    "prediction": "Samantha and Eric are discussing a recent scandal involving their favorite professor. Noah thinks he is the smartest person alive and predicted the scandal would happen. Samantha finds it amusing and doesn't even need to watch the video.",
+    "reference": "Eric, Samantha and Noah's professor is commenting a recent scandal on the news. ",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 15,
+    "prediction": "Jason and Dory are working on a movie project. Jason has purchased the app for video editing and Lucy has a script. They have two weekends left to finish the movie. Dory's friend is visiting for a week, so she needs to get the house ready. Jason says they just have to produce something now, so they are virtually done.",
+    "reference": "Jason wants to meet Dory over the weekend. Dory's friend is going to stay with her for a week. Jason has been working on a movie with Lucy for the past two months. Jason bought a video-creator app.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 16,
+    "prediction": "Peter has been busy with work but has also been working out to improve his health. He goes to a gym near their office and does weights and runs on the treadmill regularly. He mentions that besides exercises, eating better and getting enough sleep are important for good health. Lisa expresses her interest in working out as well and they talk about the various ways to stay healthy in the long term.",
+    "reference": "Peter has been working out at the gym near their office lately to improve his health. Lisa is considering working out and eating better to be healthier.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  },
+  {
+    "Qidx": 17,
+    "prediction": "Harry needs Cindy to call Ela urgently to pick up his call. Cindy is tired of being the messenger for their fights but tells Harry she has done it. Harry thanks Cindy, who is annoyed with his behavior but loves him always.",
+    "reference": "Ela is not taking Harry's phone calls. Cindy calls Ela at Harry's request.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 35
+  },
+  {
+    "Qidx": 18,
+    "prediction": "Zayna and Alex are going to meet for a drink at Zayna's place at 8 pm tonight.",
+    "reference": "Alex is coming for a drink tonight at 8 to Zayna's place.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 15
+  },
+  {
+    "Qidx": 19,
+    "prediction": "Bob advises Lenny on shopping for trousers based on quality and outfit options. Lenny sends photos for advice and Bob recommends the first or third pair for the best options. Lenny considers not buying a second purple pair.",
+    "reference": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.",
+    "method": "ksa+llm",
+    "split": "public",
+    "task": "summarization",
+    "ood": false,
+    "num_candidates": 40
+  }
+]
