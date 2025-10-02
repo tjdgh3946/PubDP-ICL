@@ -172,4 +172,4 @@ Choose how to collapse an ensemble of candidate responses into **one final answe
 ---
 ## Acknowledgements
 
-This repository adapts and extends Tang’s prior work on ICL aggregation.
+This repository adapts and extends [Wu’s prior work on private ICL](https://github.com/tongwu2020/DP-ICL).
