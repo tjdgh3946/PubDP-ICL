@@ -135,7 +135,7 @@ final_outputs/
 
 Choose how to collapse an ensemble of candidate responses into **one final answer** per question.
 
-### 1) DPM (Differentially Private Clustering)
+### 1) DPM (Differentially Private Clustering, **Main Method**)
 - **What it does:** Runs `DPM.perform_clustering()` on per-question embeddings, ranks clusters by size, then picks **representatives** nearest to cluster centers.
 - **Privacy knobs:** `--dpm_eps` (ε), `--dpm_eps_em` (exp scale), `--dpm_eps_gm` (avg scale), `--dpm_levels` (split depth).
 - **Candidate pool:** `--dpm_pool {public|private|all|auto}`. For `public+private`, `auto` restricts to public by default.
@@ -149,21 +149,6 @@ Choose how to collapse an ensemble of candidate responses into **one final answe
 - **Privacy knob:** `--ksa_eps` (ε); `inf` ≈ top-k by counts (no DP).
 - **Token source:** `--ksa_source {public|private|public+private|split}`.
 - **When to use:** You want DP token-level aggregation with a light LLM decision/generation step.
-
-### 3) Cluster-rep (Precomputed Representatives)
-- **What it does:** Uses representatives from the saved cluster JSON  
-  `semantic_group/<stem>_<split>/<stem>_<split>_clusters_thr{T}.json`.
-- **Control:** `--thr` (similarity threshold used at E2E stage), `--topk`.
-- **When to use:** You already computed clusters in E2E and want a fast, deterministic finalize pass.
-
-### 4) LLM-select (Reranking)
-- **What it does:** Builds a compact **selector prompt** with top-k textual candidates; the LLM outputs the single best.
-- **Control:** `--topk`, `--model`, `--max_tokens`, `--temperature`.
-- **When to use:** You prefer semantic reranking by the model over purely statistical/DPM choices.
-
-### 5) Majority (Frequency Vote)
-- **What it does:** Picks the **most frequent** candidate string (ties by earliest occurrence).
-- **When to use:** A non-DP, non-LLM baseline; fast and deterministic.
 
 **Task-Aware Behavior**
 - **QA:** KSA prompts use `Question:/Answer:`; metrics default to **BLEU-1 / METEOR / ROUGE-1**.
