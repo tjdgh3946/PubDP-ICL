@@ -1,4 +1,4 @@
-# Public Data Assisted Differentially Private In-Context Learning — EMNLP 2025 Main
+# Public Data Assisted Differentially Private In-Context Learning — EMNLP 2025 Findings
 
 [![arXiv](https://img.shields.io/badge/arXiv-2509.10932-b31b1b.svg)](https://www.arxiv.org/abs/2509.10932)
 <!--
