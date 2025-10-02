@@ -173,14 +173,14 @@ Choose how to collapse an ensemble of candidate responses into **one final answe
 
 ## Consider citing our paper
 ```bibtex
-@misc{joo2025harmfulpromptlaunderingjailbreaking,
-      title={Harmful Prompt Laundering: Jailbreaking LLMs with Abductive Styles and Symbolic Encoding}, 
+@misc{joo2025publicdataassisteddifferentially,
+      title={Public Data Assisted Differentially Private In-Context Learning}, 
       author={Seongho Joo and Hyukhun Koh and Kyomin Jung},
       year={2025},
-      eprint={2509.10931},
+      eprint={2509.10932},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2509.10931}, 
+      url={https://arxiv.org/abs/2509.10932}, 
 }
 ```
 
